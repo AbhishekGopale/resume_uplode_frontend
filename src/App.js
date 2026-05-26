@@ -58,7 +58,7 @@ function App() {
 
     }
   };
-
+    
   /* =========================
      ONLY NUMBER + DECIMAL
   ========================= */
@@ -166,6 +166,29 @@ function App() {
           Candidate Resume Upload
         </h2>
 
+
+{/* =========================
+            ✅ UPLOADER NAME
+        ========================= */}
+
+        <div className="mb-3">
+
+          <label className="fw-bold">
+            Uploader Name
+          </label>
+
+          <input
+            type="text"
+            className="form-control"
+            value={uploaderName}
+            onChange={(e) =>
+              setUploaderName(e.target.value)
+            }
+            placeholder="Enter your name"
+            required
+          />
+
+        </div>
         {/* =========================
             FILE
         ========================= */}
@@ -246,27 +269,7 @@ function App() {
 
         </div>
 
-        {/* =========================
-            ✅ UPLOADER NAME
-        ========================= */}
-
-        <div className="mb-3">
-
-          <label className="fw-bold">
-            Uploader Name
-          </label>
-
-          <input
-            type="text"
-            className="form-control"
-            value={uploaderName}
-            onChange={(e) =>
-              setUploaderName(e.target.value)
-            }
-            placeholder="Enter your name"
-          />
-
-        </div>
+        
 
         {/* =========================
             BUTTON
